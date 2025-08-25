@@ -1,0 +1,8 @@
+org\inghub\brokagefirm\controller\TestController.class
+org\inghub\brokagefirm\model\Order.class
+org\inghub\brokagefirm\model\Role.class
+org\inghub\brokagefirm\model\OrderStatus.class
+org\inghub\brokagefirm\model\OrderSide.class
+org\inghub\brokagefirm\BrokagefirmApplication.class
+org\inghub\brokagefirm\model\Asset.class
+org\inghub\brokagefirm\model\Customer.class

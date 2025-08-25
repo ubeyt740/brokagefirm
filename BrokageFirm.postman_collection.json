@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "b5be9bb1-f5e1-4546-be33-2dcc73feccff",
+		"name": "BrokageFirm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47833539"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/orders/create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoyLCJyb2xlIjoiVVNFUiIsInN1YiI6ImN1c3RvbWVyMiIsImlhdCI6MTc1NjA3NDcxNSwiZXhwIjoxNzU2MTEwNzE1fQ.Ka6jpmiDnJ0nrbrToSEd_9G3vMU4uPTlxfa4lFSfRXg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"customerId\": 2,\r\n    \"assetName\": \"ING\",\r\n    \"side\":\"BUY\",\r\n    \"size\": 5,\r\n    \"price\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoyLCJyb2xlIjoiVVNFUiIsInN1YiI6ImN1c3RvbWVyMiIsImlhdCI6MTc1NjA0MzEwMSwiZXhwIjoxNzU2MDc5MTAxfQ.krTTbVfAnw0Q0MGbiOeo-4t0DB0l_cqyRizZNeh9F9I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"orderId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/orders/list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoyLCJyb2xlIjoiVVNFUiIsInN1YiI6ImN1c3RvbWVyMiIsImlhdCI6MTc1NjA0NDc3MSwiZXhwIjoxNzU2MDgwNzcxfQ.6UYVioyGhuNQEXayQzvW0gMNYXUJhoapwC7QN3kV0wY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n         \"customerId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/assets/list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoxLCJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjA0MTAzNSwiZXhwIjoxNzU2MDc3MDM1fQ.8gl-qky93GSoO6ehA_KtB-nlCPmpFMZsV-2z8YAd5zg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/assets/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"assets",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/auth/login?userName=customer2&password=123456",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login?userName=customer2&password=123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "customer2"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/admin/orders/approveOrReject",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoxLCJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbiIsImlhdCI6MTc1NjA3MjQ1NCwiZXhwIjoxNzU2MTA4NDU0fQ.ChPhZ1GzxSLahAAylsshVMHBXi3QkyYGq2t-Uf-6Ads",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"actions\": [\r\n \r\n    {\r\n      \"orderId\": 3,\r\n      \"decision\": \"APPROVE\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/orders/approveOrReject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"orders",
+						"approveOrReject"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
